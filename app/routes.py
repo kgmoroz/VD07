@@ -67,7 +67,7 @@ def edit_profile():
         # Сохраняем изменения в базе данных
         db.session.commit()
         flash('Profile updated successfully!', 'success')
-        return redirect(url_for('account'))  # Замените на правильный маршрут
+        return redirect(url_for('account'))  # Перенаправляем на страницу аккаунта
 
     # Предзаполняем форму текущими данными
     elif request.method == 'GET':
